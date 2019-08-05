@@ -1,0 +1,31 @@
+.subscribe-section{
+	padding:55px;
+	background: center top / cover no-repeat url(../img/home/subscribe-bg.png);
+	.subscribe-form{
+		width:565px;
+		max-width:100%;
+		margin-right: auto;
+		margin-left: auto;
+		.action-box{
+			button,.btn{
+				display: inline-block;
+				@include b(mobile){
+					display: block;
+					width:100%;
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+	.subscribe-section {
+		padding-left: 10px;
+		padding-right: 10px;
+
+		& input::placeholder {
+			font-size: 16px;
+		}
+	}
+}

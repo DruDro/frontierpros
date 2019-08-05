@@ -1,0 +1,10 @@
+﻿[
+  "DiscountRequirement.MustBeAssignedToCustomerRole",
+  "Payments.CheckMoneyOrder",
+  "Payments.Manual",
+  "Pickup.PickupInStore",
+  "Tax.FixedOrByCountryStateZip",
+  "Widgets.GoogleAnalytics",
+  "ExternalAuth.ActiveDirectoryB2C",
+  "Mobile.SMS.Twilio"
+]

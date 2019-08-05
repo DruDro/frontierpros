@@ -1,0 +1,7 @@
+﻿.ad-b2c-btn {
+    display: inline-block;
+    width: 150px;
+    height: 23px;
+    background-image: url('images/active-directory-b2c-signing.png');
+    background-repeat: no-repeat;
+}

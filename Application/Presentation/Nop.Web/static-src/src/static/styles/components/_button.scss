@@ -1,0 +1,73 @@
+button,
+.btn {
+	box-shadow: none;
+	display: block;
+	line-height: 50px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid transparent;
+	outline: 0;
+	background: $themeColor;
+	color: #fff;
+	border-radius: 25px;
+	height: 50px;
+	padding: 0 30px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: $mainFont;
+	transition: all .3s ease-in-out;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+
+	&.wide {
+		width: 100%;
+	}
+
+	&.inline {
+		display: inline-block;
+	}
+
+	&.pad {
+		padding: 0 50px;
+	}
+	&.fixed-width{
+		width:260px;
+	}
+	&.transparent {
+		border: 1px solid $themeColor;
+		background: transparent;
+		color: $themeColor;
+		font-weight: 300;
+	}
+
+	&:hover,
+	&:focus {
+		color: $themeColor;
+		background: #fff;
+		border-color: transparent;
+		@extend .raised
+	}
+
+	&:active,
+	&.focus,
+	&.tab__link--active {
+		background: $themeColor;
+		color: #fff;
+	}
+}
+
+.back-btn {
+	@include b(tablet) {
+		.btn,
+		button {
+			font-size: 12px;
+			border: 10px solid transparent;
+			background: transparent;
+			box-shadow: 0 0 0 20px #7094f7 inset;
+			padding: 0;
+			width: 44px;
+			border-radius: 50%;
+			line-height: 24px;
+		}
+	}
+}

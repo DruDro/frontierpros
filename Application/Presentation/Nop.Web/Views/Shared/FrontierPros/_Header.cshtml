@@ -1,0 +1,108 @@
+﻿@model bool
+<header class="header">
+    <ul class="container">
+        <nav class="header__nav">
+						<div class="header__logo">
+								<a href="#">
+										<img src="@Url.Content("~/media/img/logo.png")" alt="">
+								</a>
+						</div>
+            <ul class="header__links">
+                <li class="dropdown drpHvr">
+                    <a href="@Url.Action("Index","Home")" class="@(Model ? "active":"drpHvr")">
+                        Customer
+                    </a>
+                    @if (Model)
+                    {
+                        <ul class="js-dropdown-cont">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <li>
+                                    <a href="/login-member" class="js-popup">Log In</a>
+                                </li>
+                                <li>
+                                    <a href="/signup-member" class="js-popup">Sign Up</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <a href="/logout" class="js-popup">Log Out</a>
+                                </li>
+                            }
+
+                        </ul>
+                    }
+                </li>
+                <li class="dropdown drpHvr">
+                    <a href="@Url.Action("Provider","Home")" class="@(Model ? "drpHvr":"active")">
+                        Provider
+                    </a>
+                    @if (!Model)
+                    {
+                        <ul class="js-dropdown-cont">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <li>
+                                    <a href="/login-provider" class="js-popup">Log In</a>
+                                </li>
+                                <li>
+                                    <a href="/signup-provider" class="js-popup">Sign Up</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li>
+                                    <a href="/logout" class="js-popup">Log Out</a>
+                                </li>
+                            }
+
+                        </ul>
+                    }
+                </li>
+            </ul>
+            <button id="menuToggle" class="transparent tablet-visible hidden"><i class="icon fa fa-bars"></i></button>
+        </nav>
+        <nav class="mobile-menu tablet-visible hidden">
+            <ul class="social-links">
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Up as Provider</a></li>
+                <li><a href="#">Sign Up as Customer</a></li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" class=""><i class="icon fab fa-facebook-f"></i>Facebook</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" target="_blank" class=""><i class="icon fab fa-twitter"></i>Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" class=""><i class="icon fab fa-instagram"></i>Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank" class=""><i class="icon fab fa-linkedin-in"></i>LinkedinIn</a>
+                </li>
+            </ul>
+            <ul class="app-links">
+                <li>
+                    <a href="#">
+                        <i class="icon">
+                            <svg>
+                                <use xlink:href="#app_store_btn" />
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon">
+                            <svg>
+                                <use xlink:href="#google_play_btn" />
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+            </ul>
+            <button id="menuClose" class="transparent"><i class="icon fas fa-times"></i></button>
+        </nav>
+        <div id="mobMenuOverlay" class="tablet-visible hidden"></div>
+        </div>
+</header>

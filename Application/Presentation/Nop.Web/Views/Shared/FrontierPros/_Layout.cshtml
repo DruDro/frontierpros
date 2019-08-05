@@ -1,0 +1,14 @@
+﻿@{
+    Layout = "~/Views/Shared/FrontierPros/_Layout.Head.cshtml";
+}
+
+@await Html.PartialAsync("~/Views/Shared/FrontierPros/_SvgSpriteContainer.cshtml")
+
+@RenderSection("header", true)
+
+@RenderBody()
+
+@await Html.PartialAsync("~/Views/Shared/FrontierPros/_Footer.cshtml")
+
+<script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script defer src="@Url.Content("~/media/js/scripts.js")"></script>

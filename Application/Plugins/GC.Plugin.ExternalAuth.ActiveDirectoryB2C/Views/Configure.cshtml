@@ -1,0 +1,92 @@
+﻿@model Nop.Plugin.ExternalAuth.ActiveDirectoryB2C.Models.ConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+@inject Nop.Core.IWebHelper webHelper
+
+<form asp-controller="ActiveDirectoryB2CAuthentication" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            @T("Plugins.ExternalAuth.ActiveDirectoryB2C.Instructions")
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="Instance" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="Instance" />
+                <span asp-validation-for="Instance"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="Domain" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="Domain" />
+                <span asp-validation-for="Domain"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="ClientId" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="ClientId" />
+                <span asp-validation-for="ClientId"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="ClientSecret" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="ClientSecret" />
+                <span asp-validation-for="ClientSecret"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="CallbackPath" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="CallbackPath" />
+                <span asp-validation-for="CallbackPath"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="SignUpSignInPolicyId" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="SignUpSignInPolicyId" />
+                <span asp-validation-for="SignUpSignInPolicyId"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="ResetPasswordPolicyId" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="ResetPasswordPolicyId" />
+                <span asp-validation-for="ResetPasswordPolicyId"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3">
+                <nop-label asp-for="EditProfilePolicyId" />
+              </div>
+              <div class="col-md-9">
+                <nop-editor asp-for="EditProfilePolicyId" />
+                <span asp-validation-for="EditProfilePolicyId"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-9 col-md-offset-3">
+                <input type="submit" name="save" class="btn bg-primary" value="@T("Admin.Common.Save")" />
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> 
+</form>

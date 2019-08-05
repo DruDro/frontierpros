@@ -1,0 +1,11 @@
+﻿{
+	"Group": "SMS providers",
+	"FriendlyName": "Twilio SMS",
+	"SystemName": "Mobile.SMS.Twilio",
+	"Version": "1.0",
+	"SupportedVersions": [ "4.10" ],
+	"Author": "Gentle Code LLC",
+	"DisplayOrder": 1,
+	"FileName": "Nop.Plugin.SMS.Twilio.dll",
+	"Description": "This plugin allows to integrate with Twilio. Owner can send SMS messages"
+}

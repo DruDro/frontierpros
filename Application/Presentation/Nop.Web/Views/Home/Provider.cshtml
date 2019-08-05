@@ -1,0 +1,824 @@
+﻿@{
+    Layout = "~/Views/Shared/FrontierPros/_Layout.cshtml";
+}
+
+@section header
+{
+    @await Html.PartialAsync("~/Views/Shared/FrontierPros/_Header.cshtml", false)
+}
+<section class="provider-section my-5 py-5">
+    <div class="container">
+        <h1 class="center">
+            Are You a Skilled Professional?
+        </h1>
+        <h3 class="center c-black mt-4">
+            Get Paid on Your Own Schedule Using Your Skills to Help Others
+        </h3>
+        <div class="mt-5 d-block d-sm-flex align-items-center justify-content-center">
+            <a href="/signup-provider" class="d-block btn">Sign Up As Provider</a>
+            <a href="/login-provider" class="d-block btn ml-0 ml-sm-4 mt-4 mt-sm-0">Login As Provider</a>
+        </div>
+        <h3 class="center c-black mt-5 py-5">
+            Benefits of Being a FrontierPros Provider
+        </h3>
+        <div class="benefits">
+            <div class="card benefit">
+                <div class="benefit__header">
+                    <span class="benefit__counter">1</span>
+                    <i class="benefit__icon icon gradient">
+                        <svg><use xlink:href="#calendar" /></svg>
+                    </i>
+                </div>
+                <div class="benefit__title">
+                    Work on Your Own Schedule
+                </div>
+                <div class="benefit__description">
+                    Connect with local customers for free and make money on your own schedule.
+                    Whatever work you do, we’ll find you
+                    quality jobs.
+                </div>
+
+            </div>
+            <div class="card benefit">
+                <div class="benefit__header">
+                    <span class="benefit__counter">2</span>
+                    <i class="benefit__icon icon gradient">
+                        <svg><use xlink:href="#handshake" /></svg>
+                    </i>
+                </div>
+                <div class="benefit__title">
+                    Promote Your business
+                </div>
+                <div class="benefit__description">
+                    Enjoy free promotions with our multi-channel marketing programs.
+                    This generates more leads and jobs for you.
+                </div>
+
+            </div>
+            <div class="card benefit">
+                <div class="benefit__header">
+                    <span class="benefit__counter">3</span>
+                    <i class="benefit__icon icon gradient">
+                        <svg><use xlink:href="#bill" /></svg>
+                    </i>
+                </div>
+                <div class="benefit__title">
+                    Get paid Quickly
+                </div>
+                <div class="benefit__description">
+                    Log in to your provider portal to access world class tools to track your jobs, communicate with customers, get paid quickly and track earnings. No more chasing payments as we handle invoicing and payments. We transfer payments into your bank account once jobs are completed.
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service-slider">
+    <div class="container">
+        <div class="slider__header">
+
+            <h3>Service Categories</h3>
+            <div class="view-all">
+                <a href="service-categories.html">View All Services <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+        </div>
+        <div class="slider-container">
+            <div class="slider categories" id="categories">
+
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/home.png")" ) alt=""></div>
+                        <div class="info">
+                            <div class="title">Home</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/lessons.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Lessons</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/business.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Business</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/events.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Events</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/wellness.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Wellness</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/craft.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Craft</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/home.png")" ) alt=""></div>
+                        <div class="info">
+                            <div class="title">Home</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/lessons.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Lessons</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/business.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Business</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/events.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Events</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/wellness.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Wellness</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/craft.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Craft</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav"></div>
+        </div>
+    </div>
+</section>
+<section class="how" id="how_it_works">
+    <div class="container">
+        <h3>How it works</h3>
+        <div class="tabs how__tabs">
+            <div class="tab__nav">
+                <ol>
+                    <li class="tablet-slide">
+                        <a href="#questions" class="js-tab-link card tab__link--active no-shadow">
+                            <div class="icon gradient">
+                                <svg>
+                                    <use xlink:href="#call" />
+                                </svg>
+                            </div>
+                            <div class="details">
+                                <div class="title">We ask you few questions</div>
+                                <div class="desc">Let us know the service you need, and we will match you with he right pros.</div>
+                            </div>
+                        </a>
+                        <div class="js-tab-cont" id="questions">
+                            <div class="video-wrapper">
+                                <div class="play-btn icon gradient">
+                                    <svg>
+                                        <use xlink:href="#play-button" />
+                                    </svg>
+                                </div> <img src="@Url.Content("~/media/img/home/video.png")" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tablet-slide">
+                        <a href="#quotes" class="js-tab-link card no-shadow">
+                            <div class="icon gradient">
+                                <svg>
+                                    <use xlink:href="#quotes" />
+                                </svg>
+                            </div>
+                            <div class="details">
+                                <div class="title">Review Rates or Receive Quotes</div>
+                                <div class="desc">Review rates instantly, or receive quotes from matched Pros based on your request</div>
+                            </div>
+                        </a>
+                        <div class="js-tab-cont" id="quotes">
+                            <div class="video-wrapper">
+                                <div class="play-btn icon gradient">
+                                    <svg>
+                                        <use xlink:href="#play-button" />
+                                    </svg>
+                                </div><img src="@Url.Content("~/media/img/home/video.png")" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tablet-slide">
+                        <a href="#pros" class="js-tab-link card no-shadow">
+                            <div class="icon gradient">
+                                <svg>
+                                    <use xlink:href="#right-pro" />
+                                </svg>
+                            </div>
+                            <div class="details">
+                                <div class="title">Schedule Your Service With Providers</div>
+                                <div class="desc">Check availability and schedule a time with the right pro!</div>
+                            </div>
+                        </a>
+                        <div class="js-tab-cont" id="pros">
+                            <div class="video-wrapper">
+                                <div class="play-btn icon gradient">
+                                    <svg>
+                                        <use xlink:href="#play-button" />
+                                    </svg>
+                                </div><img src="@Url.Content("~/media/img/home/video.png")" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <div class="slider__nav"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="download py-5" id="download_app">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-2 d-none d-lg-block"></div>
+            <div class="col-lg-5 ">
+                <h2>Download our mobile app</h2>
+                <p><b>Type in your phone number below and we'll text you a link to our App</b></p>
+                <div class="input-box mb-4">
+                    <input type="text" placeholder="Enter Your Phone Number">
+
+                </div>
+                <div class="row align-items-center justify-content-between flex-wrap flex-xl-nowrap flex-lg-wrap flex-sm-nowrap">
+                    <div class="col-xl mb-xl-0 col-lg-12 mb-lg-4 col-sm mb-sm-0 col-12 mb-4">
+                        <a href="#" class="btn d-block pad text-nowrap">Send Link</a>
+                    </div>
+                    <div class="col-xl mb-xl-0 col-lg-12 mb-lg-4 col-sm mb-sm-0 col-12 mb-4">
+                        <a href="#" class="download-link">
+                            <i class="icon">
+
+                                <svg>
+                                    <use xlink:href="#app_store_btn" />
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="col-xl col-lg-12 col-sm col-12">
+                        <a href="#" class=" download-link">
+                            <i class="icon">
+                                <svg>
+                                    <use xlink:href="#google_play_btn" />
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 d-none d-lg-block download-bg">
+                <img src="@Url.Content("~/media/img/home/download.png")" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service-slider">
+    <div class="container">
+        <div class="slider__header">
+
+            <h3>Most Popular Providers</h3>
+            <div class="view-all">
+                <a href="service-categories.html">View All Services <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+        </div>
+        <div class="slider-container">
+            <div class="slider technicians small" id="techiciansSlider">
+
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide technician">
+                    <div class="card">
+                        <div class="technician__header">
+                            <div class="technician__ava">
+                                <img src="@Url.Content("~/media/img/home/ava.jpg")" alt="">
+                            </div>
+                            <div class="technician__details">
+                                <div class="person">
+                                    <div class="name">Steve Larson</div>
+                                    <div class="rating">
+                                        5.0 <div class="stars"><i class="fas fa-star"></i></div>
+                                    </div>
+                                </div>
+                                <div class="job">Developer</div>
+                                <div class="highlights">15 km | $100 - $500</div>
+                                <div class="technician__review">
+                                    <div class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider__nav"></div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <h2 class="center">Are You Looking for a Skilled Professional?</h2>
+        <p class="center">Review rates instantly and get help for whatever you need done</p>
+        <p class="center mt-5">
+            <a href="/signup-member" class="btn inline">
+                Sign Up as a Customer
+            </a>
+        </p>
+    </div>
+</section>
+<section class="service-slider pt-5">
+    <div class="container">
+        <div class="slider__header">
+
+            <h3>Trending Services</h3>
+            <div class="view-all">
+                <a href="service-categories.html">View All Services <i class="fas fa-chevron-right"></i></a>
+            </div>
+
+        </div>
+        <div class="slider-container">
+            <div class="slider categories" id="categories">
+
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/home.png")" ) alt=""></div>
+                        <div class="info">
+                            <div class="title">Home</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/lessons.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Lessons</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/business.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Business</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/events.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Events</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/wellness.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Wellness</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/craft.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Craft</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/home.png")" ) alt=""></div>
+                        <div class="info">
+                            <div class="title">Home</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/lessons.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Lessons</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/business.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Business</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/events.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Events</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/wellness.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Wellness</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <div class="icon" style="background-image:url(@Url.Content("~/media/img/categories/craft.png"))" alt=""></div>
+                        <div class="info">
+                            <div class="title">Craft</div>
+                            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slider__nav"></div>
+        </div>
+    </div>
+</section>
+<section class="subscribe-section">
+    <div class="container">
+        <form action="" class="subscribe-form m-auto">
+            <h2>Want to stay in touch?</h2>
+            <p><b>Please join our newsletter</b></p>
+            <div class="input-box mb-1">
+                <input type="text" placeholder="Enter Your Full Name">
+            </div>
+            <div class="input-box mb-2">
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="input-box">
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+</section>
+<div class="popup" id="locationPop" data-close="popup">
+    <div class="popup__heading">Choose your location</div>
+    <form action="">
+        <div class="input-box mb-3">
+            <input type="text" class="input" placeholder="Your location" onchange="setLocation(this)">
+        </div>
+        <div class="hint mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        <!-- <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1526040296" />
+        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"></script> -->
+        <div id="map" style=""><img src="@Url.Content("~/media/img/home/location.jpg")" alt=""></div>
+        <div class="mt-4 mx-auto center">
+            <a href="#" class="btn inline raised pad js-popup-close">Select</a>
+        </div>
+    </form>
+</div>

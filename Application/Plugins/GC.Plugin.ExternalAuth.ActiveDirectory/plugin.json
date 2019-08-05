@@ -1,0 +1,11 @@
+﻿{
+	"Group": "ExternalAuth methods",
+	"FriendlyName": "ActiveDirectory authentication",
+	"SystemName": "ExternalAuth.ActiveDirectory",
+	"Version": "1.0",
+	"SupportedVersions": [ "4.10" ],
+	"Author": "Gentle Code LLC",
+	"DisplayOrder": 6,
+	"FileName": "Nop.Plugin.ExternalAuth.ActiveDirectory.dll",
+	"Description": "This plugin enables ActiveDirectory authentication (login using ActiveDirectory)"
+}

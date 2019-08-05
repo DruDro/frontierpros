@@ -1,0 +1,227 @@
+.how__map {
+	.container {
+		width: 1600px;
+		background: url('../img/home/map.png') right center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 600px;
+		padding: 150px 30px;
+
+		@include b(991) {
+			height: auto;
+			padding: 30px 15px;
+			background: none;
+		}
+	}
+
+	&__description {
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	.sign-up {
+		a {
+			display: inline-block;
+		}
+
+		@include b(desktop) {
+
+			button,
+			.btn {
+				display: block;
+			}
+		}
+	}
+}
+
+.how {
+	padding-top: 35px;
+
+	.how__tabs {
+		display: flex;
+		position: relative;
+	
+		.tab__nav {
+			flex: 0 0 50%;
+			@include b(tablet) {
+				width:100%;
+				flex: 0 0 100%;
+				position: relative;
+				padding-bottom:40px;
+				.slick-list{			
+					margin:0 -20px;
+				}
+			}
+			.tablet-slide{
+				@include b(tablet) {
+					margin: 0 20px;
+				}
+			}
+			ol {
+				counter-reset: item;
+	
+				li {
+					margin: 20px 0;
+					position: static;
+					counter-increment: item;
+	
+					@include b(1200) {
+						margin-left: 90px;
+					}
+	
+					@include b(tablet) {
+						margin-left: 0;
+					}
+	
+					&:before {
+						display: none;
+					}
+	
+					.js-tab-link {
+						display: flex;
+						flex-flow: row wrap;
+						padding: 30px 20px;
+						align-items: center;
+						position: relative;
+	
+						@include b(tablet) {
+							padding: 20px 40px 20px 20px;
+						}
+	
+	
+						.details {
+							flex: 0 0 calc(100% - 150px);
+							flex-basis: calc(100% - 150px);
+	
+							@include b(tablet) {
+								flex: 0 0 calc(100% - 70px);
+								flex-basis: calc(100% - 70px);
+							}
+						}
+	
+						.icon {
+							width: 90px;
+							height: 90px;
+							margin: 0px 40px 0 20px;
+							flex: 0 0 90px;
+	
+							svg {
+								transition: fill .15s ease-in-out;
+							}
+	
+							@include b(tablet) {
+								flex: 0 0 50px;
+								margin: 0px 20px 0 0px;
+							}
+	
+						}
+	
+						.title {
+							color: $linkColor;
+							font-size: 18px;
+							font-weight: 700;
+							transition: color .15s ease-in-out;
+						}
+	
+						.desc {
+							font-weight: 300;
+							font-size: 14px;
+							color: $mainFontColor;
+							transition: color .15s ease-in-out;
+						}
+	
+						&:hover,
+						&.tab__link--active {
+							background: $secondaryThemeColor;
+							color: #fff;
+	
+							.title {
+								color: #fff;
+							}
+	
+							.desc {
+								color: #fff;
+							}
+	
+							.icon {
+								svg {
+									fill: #fff;
+	
+								}
+							}
+						}
+	
+						@include b(tablet) {
+							background: $themeColor;
+							color: #fff;
+	
+							.title {
+								color: #fff;
+							}
+	
+							.desc {
+								color: #fff;
+							}
+	
+							.icon {
+								svg {
+									fill: #fff;
+	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	
+		.js-tab-cont {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: calc(50% - 30px);
+	
+			@include b(tablet) {
+				position: relative;
+				width: 100%;
+				transform: none;
+				top: 0;
+				margin-top: 20px;
+				left: 0;
+				display: block !important;
+			}
+	
+			img {
+				width: 100%;
+			}
+	
+			.video-wrapper {
+				position: relative;
+	
+				.play-btn {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					cursor: pointer;
+					width: 100px;
+					height: 100px;
+				}
+	
+				&:hover {
+					.play-btn {
+	
+						opacity: .8
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.how {
+		padding-top: 15px;
+	}
+}

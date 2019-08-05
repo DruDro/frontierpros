@@ -1,0 +1,55 @@
+//----------------------------------------------------//
+// LAYOUT                                             //
+//----------------------------------------------------//
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	outline:0;
+}
+html {
+	overflow-x:hidden;
+}
+body {
+	position:relative;
+	min-height:100vh;
+	min-width: 320px;
+	overflow-x:hidden;
+	background:#f7f8fe;
+	margin:0;
+	padding:0;
+	transition:padding .15s ease-in-out;
+}
+.noscroll {
+	overflow:hidden !important;
+	height:100%;
+	position:relative;
+}
+.page {
+	display:flex;
+	flex-flow:column nowrap;
+	width:100%;
+}
+.container {
+	padding: 0 45px;
+	width: 1570px;
+	max-width:100%;
+	margin: 0 auto; 
+	position:relative;
+	@include b(desktop){
+		padding: 0 30px;
+	}
+	@include b(tablet){
+		padding: 0 20px;
+	}
+	@include b(mobile){
+		padding: 0 15px;
+	}
+}
+
+.j-pp-mockup {
+	position:absolute;
+	top:0;
+	margin-left:50%;
+	transform:translateX(-50%);
+}

@@ -1,0 +1,234 @@
+input[type="radio"],input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    &+label {
+        text-align: left;
+        font-size: 19px;
+        line-height: normal;
+        font-family: $mainFont;
+        font-weight: 300;
+        color: #444444;
+        transition: all .15s ease-in-out;
+        display: flex;
+        padding: 0;
+        margin:0;
+        position: relative;
+        flex-flow:row nowrap;
+        align-items:center;
+        justify-content:flex-start;
+        cursor: pointer;
+        @include b(desktop){
+            font-size:15px;    
+        }
+        &:before {
+            content: "";
+            display: block;
+            flex: 0 0 40px;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 0 1px #bbb1d3;
+            border: 1px solid #fff;
+            background-color: white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 18px 15px;
+            border-radius: 50%;
+            transition: all .15s ease-in-out;
+            margin-right:20px;
+            z-index:1;
+            position:relative;
+            @include b(desktop){
+                flex: 0 0 30px;
+                width: 30px;
+                height: 30px;
+                margin-right:10px;
+                background-size: 12.8px 11.6px;
+            }
+        }
+        &:hover {
+            &:before {
+                box-shadow: 0 0 0 1px #786fce;
+            }
+        }
+    }
+    &:checked+label:before {
+        box-shadow: 0 0 0 1px #786fce;
+        background-color: #786fce;
+        background-image: url(../img/misc/check.png)
+    }
+    &:focus+label:before {
+        box-shadow: 0 0 5px 3px #786fce;
+    }
+    @at-root .validate &:invalid {
+        &+label {
+            color: #e40000;
+            &:before {
+                background-color: #f0c1c6;
+                border-color: transparent;
+                box-shadow: 0 0 0 1px #e40000;
+            }
+        }
+    }
+    &.color {
+        -webkit-appearance: none;
+        background: transparent;
+        background-size: calc(100% - 20px);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        display: block;
+        width: 110px;
+        height: 110px;
+        transition: all .15s ease-in-out;
+        left: 0;
+        position: relative;
+        font-size: 0;
+        line-height: 0;
+        transform: scale(.9);
+        @include b(desktop) {
+            width: 75px;
+            height: 75px;
+        }
+        &::-ms-check {
+            background-color: transparent;
+            color: transparent;
+            border: 0;
+        }
+        &+.checked {
+            display: block;
+            position: absolute;
+            top: 55px;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #786fce;
+            background-image: url(../img/misc/check.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            transform: translate(-15px, -15px);
+            opacity: 0;
+            transition: all .15s ease-in-out;
+            @include b(desktop) {
+                transform: translate(-10px, -25px);
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &:checked,
+        &:focus,
+        &:hover {
+            box-shadow: 0 0 0 2px #786fce !important;
+            background-size: 100%;
+            transform: scale(1);
+        }
+        &:checked+.checked {
+            opacity: 1;
+        }
+        &~.color-label {
+            padding: 10px 0 0;
+            font-size:19px;
+            font-family:$mainFont;
+            font-weight:300;
+            color:#444;
+            display:inline-block;
+            line-height:normal;
+        }
+    }
+}
+
+.color-box {
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    position: relative;
+    &,
+    & * {
+        cursor: pointer;
+    }
+    &:hover {
+        .color {
+            box-shadow: 0 0 0 2px #786fce !important;
+            transform: scale(1);
+        }
+    }
+}
+
+.radio-box,.check-box {
+    &--image,&--photo {
+        input {
+            &+label {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: flex-start;
+                position:relative;
+                padding:0;
+                &:before {
+                    position: relative;
+                    top: 0;
+                    transform: none;
+                    flex: 0 0 40px;
+                    margin-right:0;
+                    @include b(desktop){
+                        flex: 0 0 30px;
+                    }
+                }
+                img {    
+                    display: block;
+                    height: 200px;
+                    max-width: calc(100% - 40px);
+                    margin-left: 35px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    &--photo {
+        input {
+            &+label {
+                img {
+                    margin-left:1px;
+                }
+            }
+        }
+        &--s {
+            input {
+                &+label {
+                    img {
+                        max-height:150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// $colors: ( 
+//     5d321d: #5d321d, 
+//     946149: #946149, 
+//     d0a28c: #d0a28c,
+//     e5c39e: #e5c39e,
+//     fff0e0: #fff0e0,
+//     a690ce: #a690ce,
+//     ddbebe: #ddbebe,
+//     200d05: #200d05,
+//     5b442b: #5b442b,
+//     491365: #491365,
+//     8c401b: #8c401b,
+//     63554e: #63554e,
+//     852525: #852525,
+//     e28f35: #e28f35,
+//     929292: #929292,
+//     6b576f: #6b576f,
+//     7f5427: #7f5427
+// );
+// @mixin colorRadio($color) {
+//     background-color: #{$color}!important;
+// }
+// @each $color in $colors {
+//     .color--#{nth($color, 1)} {
+//         @include colorRadio(#{nth($color, 2)});
+//     }
+// }

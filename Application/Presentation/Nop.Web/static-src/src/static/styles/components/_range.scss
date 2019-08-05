@@ -1,0 +1,43 @@
+
+.ui-slider {
+	border:0!important;
+	background: rgba($themeColor,.3);
+	position: relative;
+	&-horizontal{
+		height:3px;
+	}
+	.ui-slider-handle {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		top:-7px;
+		background: $themeColor;
+		border:0;
+		&:before{
+			content:"";
+			display:block;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			width:26px;
+			height:26px;
+			border-radius: 50%;
+			background: rgba($themeColor,.3);
+			transition:all .15s ease-in-out;
+			opacity:0;
+		}
+		&.ui-state-focus,&.ui-state-hover{
+			&:before{
+				opacity:1
+			}
+		}
+	}
+	.ui-slider-amount{
+		height:3px;
+		position: absolute;
+		left:0;
+		background: $themeColor;
+		top:0;
+	}
+}

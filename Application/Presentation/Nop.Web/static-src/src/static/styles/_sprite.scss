@@ -1,0 +1,431 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$app-store-name: 'app_store';
+$app-store-x: 0px;
+$app-store-y: 333px;
+$app-store-offset-x: 0px;
+$app-store-offset-y: -333px;
+$app-store-width: 115px;
+$app-store-height: 37px;
+$app-store-total-width: 440px;
+$app-store-total-height: 426px;
+$app-store-image: '../img/sprite.png';
+$app-store: (0px, 333px, 0px, -333px, 115px, 37px, 440px, 426px, '../img/sprite.png', 'app_store', );
+$app-store-2x-name: 'app_store_2x';
+$app-store-2x-x: 213px;
+$app-store-2x-y: 0px;
+$app-store-2x-offset-x: -213px;
+$app-store-2x-offset-y: 0px;
+$app-store-2x-width: 227px;
+$app-store-2x-height: 73px;
+$app-store-2x-total-width: 440px;
+$app-store-2x-total-height: 426px;
+$app-store-2x-image: '../img/sprite.png';
+$app-store-2x: (213px, 0px, -213px, 0px, 227px, 73px, 440px, 426px, '../img/sprite.png', 'app_store_2x', );
+$check-name: 'check';
+$check-x: 415px;
+$check-y: 224px;
+$check-offset-x: -415px;
+$check-offset-y: -224px;
+$check-width: 19px;
+$check-height: 15px;
+$check-total-width: 440px;
+$check-total-height: 426px;
+$check-image: '../img/sprite.png';
+$check: (415px, 224px, -415px, -224px, 19px, 15px, 440px, 426px, '../img/sprite.png', 'check', );
+$check-2x-name: 'check_2x';
+$check-2x-x: 194px;
+$check-2x-y: 375px;
+$check-2x-offset-x: -194px;
+$check-2x-offset-y: -375px;
+$check-2x-width: 37px;
+$check-2x-height: 29px;
+$check-2x-total-width: 440px;
+$check-2x-total-height: 426px;
+$check-2x-image: '../img/sprite.png';
+$check-2x: (194px, 375px, -194px, -375px, 37px, 29px, 440px, 426px, '../img/sprite.png', 'check_2x', );
+$close-popup-icon-name: 'close_popup_icon';
+$close-popup-icon-x: 415px;
+$close-popup-icon-y: 259px;
+$close-popup-icon-offset-x: -415px;
+$close-popup-icon-offset-y: -259px;
+$close-popup-icon-width: 15px;
+$close-popup-icon-height: 15px;
+$close-popup-icon-total-width: 440px;
+$close-popup-icon-total-height: 426px;
+$close-popup-icon-image: '../img/sprite.png';
+$close-popup-icon: (415px, 259px, -415px, -259px, 15px, 15px, 440px, 426px, '../img/sprite.png', 'close_popup_icon', );
+$close-popup-icon-2x-name: 'close_popup_icon_2x';
+$close-popup-icon-2x-x: 236px;
+$close-popup-icon-2x-y: 375px;
+$close-popup-icon-2x-offset-x: -236px;
+$close-popup-icon-2x-offset-y: -375px;
+$close-popup-icon-2x-width: 29px;
+$close-popup-icon-2x-height: 29px;
+$close-popup-icon-2x-total-width: 440px;
+$close-popup-icon-2x-total-height: 426px;
+$close-popup-icon-2x-image: '../img/sprite.png';
+$close-popup-icon-2x: (236px, 375px, -236px, -375px, 29px, 29px, 440px, 426px, '../img/sprite.png', 'close_popup_icon_2x', );
+$facebook-dark-name: 'facebook_dark';
+$facebook-dark-x: 230px;
+$facebook-dark-y: 333px;
+$facebook-dark-offset-x: -230px;
+$facebook-dark-offset-y: -333px;
+$facebook-dark-width: 35px;
+$facebook-dark-height: 35px;
+$facebook-dark-total-width: 440px;
+$facebook-dark-total-height: 426px;
+$facebook-dark-image: '../img/sprite.png';
+$facebook-dark: (230px, 333px, -230px, -333px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'facebook_dark', );
+$facebook-dark-2x-name: 'facebook_dark_2x';
+$facebook-dark-2x-x: 296px;
+$facebook-dark-2x-y: 259px;
+$facebook-dark-2x-offset-x: -296px;
+$facebook-dark-2x-offset-y: -259px;
+$facebook-dark-2x-width: 69px;
+$facebook-dark-2x-height: 69px;
+$facebook-dark-2x-total-width: 440px;
+$facebook-dark-2x-total-height: 426px;
+$facebook-dark-2x-image: '../img/sprite.png';
+$facebook-dark-2x: (296px, 259px, -296px, -259px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'facebook_dark_2x', );
+$facebook-light-name: 'facebook_light';
+$facebook-light-x: 310px;
+$facebook-light-y: 333px;
+$facebook-light-offset-x: -310px;
+$facebook-light-offset-y: -333px;
+$facebook-light-width: 35px;
+$facebook-light-height: 35px;
+$facebook-light-total-width: 440px;
+$facebook-light-total-height: 426px;
+$facebook-light-image: '../img/sprite.png';
+$facebook-light: (310px, 333px, -310px, -333px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'facebook_light', );
+$facebook-light-2x-name: 'facebook_light_2x';
+$facebook-light-2x-x: 0px;
+$facebook-light-2x-y: 259px;
+$facebook-light-2x-offset-x: 0px;
+$facebook-light-2x-offset-y: -259px;
+$facebook-light-2x-width: 69px;
+$facebook-light-2x-height: 69px;
+$facebook-light-2x-total-width: 440px;
+$facebook-light-2x-total-height: 426px;
+$facebook-light-2x-image: '../img/sprite.png';
+$facebook-light-2x: (0px, 259px, 0px, -259px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'facebook_light_2x', );
+$fb-white-icon-name: 'fb_white_icon';
+$fb-white-icon-x: 415px;
+$fb-white-icon-y: 171px;
+$fb-white-icon-offset-x: -415px;
+$fb-white-icon-offset-y: -171px;
+$fb-white-icon-width: 15px;
+$fb-white-icon-height: 26px;
+$fb-white-icon-total-width: 440px;
+$fb-white-icon-total-height: 426px;
+$fb-white-icon-image: '../img/sprite.png';
+$fb-white-icon: (415px, 171px, -415px, -171px, 15px, 26px, 440px, 426px, '../img/sprite.png', 'fb_white_icon', );
+$fb-white-icon-2x-name: 'fb_white_icon_2x';
+$fb-white-icon-2x-x: 0px;
+$fb-white-icon-2x-y: 375px;
+$fb-white-icon-2x-offset-x: 0px;
+$fb-white-icon-2x-offset-y: -375px;
+$fb-white-icon-2x-width: 30px;
+$fb-white-icon-2x-height: 51px;
+$fb-white-icon-2x-total-width: 440px;
+$fb-white-icon-2x-total-height: 426px;
+$fb-white-icon-2x-image: '../img/sprite.png';
+$fb-white-icon-2x: (0px, 375px, 0px, -375px, 30px, 51px, 440px, 426px, '../img/sprite.png', 'fb_white_icon_2x', );
+$google-play-name: 'google_play';
+$google-play-x: 120px;
+$google-play-y: 333px;
+$google-play-offset-x: -120px;
+$google-play-offset-y: -333px;
+$google-play-width: 105px;
+$google-play-height: 35px;
+$google-play-total-width: 440px;
+$google-play-total-height: 426px;
+$google-play-image: '../img/sprite.png';
+$google-play: (120px, 333px, -120px, -333px, 105px, 35px, 440px, 426px, '../img/sprite.png', 'google_play', );
+$google-play-2x-name: 'google_play_2x';
+$google-play-2x-x: 213px;
+$google-play-2x-y: 78px;
+$google-play-2x-offset-x: -213px;
+$google-play-2x-offset-y: -78px;
+$google-play-2x-width: 209px;
+$google-play-2x-height: 69px;
+$google-play-2x-total-width: 440px;
+$google-play-2x-total-height: 426px;
+$google-play-2x-image: '../img/sprite.png';
+$google-play-2x: (213px, 78px, -213px, -78px, 209px, 69px, 440px, 426px, '../img/sprite.png', 'google_play_2x', );
+$info-name: 'info';
+$info-x: 415px;
+$info-y: 202px;
+$info-offset-x: -415px;
+$info-offset-y: -202px;
+$info-width: 17px;
+$info-height: 17px;
+$info-total-width: 440px;
+$info-total-height: 426px;
+$info-image: '../img/sprite.png';
+$info: (415px, 202px, -415px, -202px, 17px, 17px, 440px, 426px, '../img/sprite.png', 'info', );
+$info-2x-name: 'info_2x';
+$info-2x-x: 155px;
+$info-2x-y: 375px;
+$info-2x-offset-x: -155px;
+$info-2x-offset-y: -375px;
+$info-2x-width: 34px;
+$info-2x-height: 34px;
+$info-2x-total-width: 440px;
+$info-2x-total-height: 426px;
+$info-2x-image: '../img/sprite.png';
+$info-2x: (155px, 375px, -155px, -375px, 34px, 34px, 440px, 426px, '../img/sprite.png', 'info_2x', );
+$instagram-dark-name: 'instagram_dark';
+$instagram-dark-x: 350px;
+$instagram-dark-y: 333px;
+$instagram-dark-offset-x: -350px;
+$instagram-dark-offset-y: -333px;
+$instagram-dark-width: 35px;
+$instagram-dark-height: 35px;
+$instagram-dark-total-width: 440px;
+$instagram-dark-total-height: 426px;
+$instagram-dark-image: '../img/sprite.png';
+$instagram-dark: (350px, 333px, -350px, -333px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'instagram_dark', );
+$instagram-dark-2x-name: 'instagram_dark_2x';
+$instagram-dark-2x-x: 148px;
+$instagram-dark-2x-y: 259px;
+$instagram-dark-2x-offset-x: -148px;
+$instagram-dark-2x-offset-y: -259px;
+$instagram-dark-2x-width: 69px;
+$instagram-dark-2x-height: 69px;
+$instagram-dark-2x-total-width: 440px;
+$instagram-dark-2x-total-height: 426px;
+$instagram-dark-2x-image: '../img/sprite.png';
+$instagram-dark-2x: (148px, 259px, -148px, -259px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'instagram_dark_2x', );
+$instagram-light-name: 'instagram_light';
+$instagram-light-x: 390px;
+$instagram-light-y: 333px;
+$instagram-light-offset-x: -390px;
+$instagram-light-offset-y: -333px;
+$instagram-light-width: 35px;
+$instagram-light-height: 35px;
+$instagram-light-total-width: 440px;
+$instagram-light-total-height: 426px;
+$instagram-light-image: '../img/sprite.png';
+$instagram-light: (390px, 333px, -390px, -333px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'instagram_light', );
+$instagram-light-2x-name: 'instagram_light_2x';
+$instagram-light-2x-x: 74px;
+$instagram-light-2x-y: 259px;
+$instagram-light-2x-offset-x: -74px;
+$instagram-light-2x-offset-y: -259px;
+$instagram-light-2x-width: 69px;
+$instagram-light-2x-height: 69px;
+$instagram-light-2x-total-width: 440px;
+$instagram-light-2x-total-height: 426px;
+$instagram-light-2x-image: '../img/sprite.png';
+$instagram-light-2x: (74px, 259px, -74px, -259px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'instagram_light_2x', );
+$quot-name: 'quot';
+$quot-x: 0px;
+$quot-y: 171px;
+$quot-offset-x: 0px;
+$quot-offset-y: -171px;
+$quot-width: 104px;
+$quot-height: 83px;
+$quot-total-width: 440px;
+$quot-total-height: 426px;
+$quot-image: '../img/sprite.png';
+$quot: (0px, 171px, 0px, -171px, 104px, 83px, 440px, 426px, '../img/sprite.png', 'quot', );
+$quot-2x-name: 'quot_2x';
+$quot-2x-x: 0px;
+$quot-2x-y: 0px;
+$quot-2x-offset-x: 0px;
+$quot-2x-offset-y: 0px;
+$quot-2x-width: 208px;
+$quot-2x-height: 166px;
+$quot-2x-total-width: 440px;
+$quot-2x-total-height: 426px;
+$quot-2x-image: '../img/sprite.png';
+$quot-2x: (0px, 0px, 0px, 0px, 208px, 166px, 440px, 426px, '../img/sprite.png', 'quot_2x', );
+$tick-plus-circle-name: 'tick_plus_circle';
+$tick-plus-circle-x: 370px;
+$tick-plus-circle-y: 259px;
+$tick-plus-circle-offset-x: -370px;
+$tick-plus-circle-offset-y: -259px;
+$tick-plus-circle-width: 40px;
+$tick-plus-circle-height: 40px;
+$tick-plus-circle-total-width: 440px;
+$tick-plus-circle-total-height: 426px;
+$tick-plus-circle-image: '../img/sprite.png';
+$tick-plus-circle: (370px, 259px, -370px, -259px, 40px, 40px, 440px, 426px, '../img/sprite.png', 'tick_plus_circle', );
+$tick-plus-circle-2x-name: 'tick_plus_circle_2x';
+$tick-plus-circle-2x-x: 109px;
+$tick-plus-circle-2x-y: 171px;
+$tick-plus-circle-2x-offset-x: -109px;
+$tick-plus-circle-2x-offset-y: -171px;
+$tick-plus-circle-2x-width: 79px;
+$tick-plus-circle-2x-height: 79px;
+$tick-plus-circle-2x-total-width: 440px;
+$tick-plus-circle-2x-total-height: 426px;
+$tick-plus-circle-2x-image: '../img/sprite.png';
+$tick-plus-circle-2x: (109px, 171px, -109px, -171px, 79px, 79px, 440px, 426px, '../img/sprite.png', 'tick_plus_circle_2x', );
+$tumblr-dark-name: 'tumblr_dark';
+$tumblr-dark-x: 75px;
+$tumblr-dark-y: 375px;
+$tumblr-dark-offset-x: -75px;
+$tumblr-dark-offset-y: -375px;
+$tumblr-dark-width: 35px;
+$tumblr-dark-height: 35px;
+$tumblr-dark-total-width: 440px;
+$tumblr-dark-total-height: 426px;
+$tumblr-dark-image: '../img/sprite.png';
+$tumblr-dark: (75px, 375px, -75px, -375px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'tumblr_dark', );
+$tumblr-dark-2x-name: 'tumblr_dark_2x';
+$tumblr-dark-2x-x: 341px;
+$tumblr-dark-2x-y: 171px;
+$tumblr-dark-2x-offset-x: -341px;
+$tumblr-dark-2x-offset-y: -171px;
+$tumblr-dark-2x-width: 69px;
+$tumblr-dark-2x-height: 69px;
+$tumblr-dark-2x-total-width: 440px;
+$tumblr-dark-2x-total-height: 426px;
+$tumblr-dark-2x-image: '../img/sprite.png';
+$tumblr-dark-2x: (341px, 171px, -341px, -171px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'tumblr_dark_2x', );
+$tumblr-light-name: 'tumblr_light';
+$tumblr-light-x: 35px;
+$tumblr-light-y: 375px;
+$tumblr-light-offset-x: -35px;
+$tumblr-light-offset-y: -375px;
+$tumblr-light-width: 35px;
+$tumblr-light-height: 35px;
+$tumblr-light-total-width: 440px;
+$tumblr-light-total-height: 426px;
+$tumblr-light-image: '../img/sprite.png';
+$tumblr-light: (35px, 375px, -35px, -375px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'tumblr_light', );
+$tumblr-light-2x-name: 'tumblr_light_2x';
+$tumblr-light-2x-x: 193px;
+$tumblr-light-2x-y: 171px;
+$tumblr-light-2x-offset-x: -193px;
+$tumblr-light-2x-offset-y: -171px;
+$tumblr-light-2x-width: 69px;
+$tumblr-light-2x-height: 69px;
+$tumblr-light-2x-total-width: 440px;
+$tumblr-light-2x-total-height: 426px;
+$tumblr-light-2x-image: '../img/sprite.png';
+$tumblr-light-2x: (193px, 171px, -193px, -171px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'tumblr_light_2x', );
+$twitter-dark-name: 'twitter_dark';
+$twitter-dark-x: 115px;
+$twitter-dark-y: 375px;
+$twitter-dark-offset-x: -115px;
+$twitter-dark-offset-y: -375px;
+$twitter-dark-width: 35px;
+$twitter-dark-height: 35px;
+$twitter-dark-total-width: 440px;
+$twitter-dark-total-height: 426px;
+$twitter-dark-image: '../img/sprite.png';
+$twitter-dark: (115px, 375px, -115px, -375px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'twitter_dark', );
+$twitter-dark-2x-name: 'twitter_dark_2x';
+$twitter-dark-2x-x: 267px;
+$twitter-dark-2x-y: 171px;
+$twitter-dark-2x-offset-x: -267px;
+$twitter-dark-2x-offset-y: -171px;
+$twitter-dark-2x-width: 69px;
+$twitter-dark-2x-height: 69px;
+$twitter-dark-2x-total-width: 440px;
+$twitter-dark-2x-total-height: 426px;
+$twitter-dark-2x-image: '../img/sprite.png';
+$twitter-dark-2x: (267px, 171px, -267px, -171px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'twitter_dark_2x', );
+$twitter-light-name: 'twitter_light';
+$twitter-light-x: 270px;
+$twitter-light-y: 333px;
+$twitter-light-offset-x: -270px;
+$twitter-light-offset-y: -333px;
+$twitter-light-width: 35px;
+$twitter-light-height: 35px;
+$twitter-light-total-width: 440px;
+$twitter-light-total-height: 426px;
+$twitter-light-image: '../img/sprite.png';
+$twitter-light: (270px, 333px, -270px, -333px, 35px, 35px, 440px, 426px, '../img/sprite.png', 'twitter_light', );
+$twitter-light-2x-name: 'twitter_light_2x';
+$twitter-light-2x-x: 222px;
+$twitter-light-2x-y: 259px;
+$twitter-light-2x-offset-x: -222px;
+$twitter-light-2x-offset-y: -259px;
+$twitter-light-2x-width: 69px;
+$twitter-light-2x-height: 69px;
+$twitter-light-2x-total-width: 440px;
+$twitter-light-2x-total-height: 426px;
+$twitter-light-2x-image: '../img/sprite.png';
+$twitter-light-2x: (222px, 259px, -222px, -259px, 69px, 69px, 440px, 426px, '../img/sprite.png', 'twitter_light_2x', );
+$spritesheet-width: 440px;
+$spritesheet-height: 426px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($app-store, $app-store-2x, $check, $check-2x, $close-popup-icon, $close-popup-icon-2x, $facebook-dark, $facebook-dark-2x, $facebook-light, $facebook-light-2x, $fb-white-icon, $fb-white-icon-2x, $google-play, $google-play-2x, $info, $info-2x, $instagram-dark, $instagram-dark-2x, $instagram-light, $instagram-light-2x, $quot, $quot-2x, $tick-plus-circle, $tick-plus-circle-2x, $tumblr-dark, $tumblr-dark-2x, $tumblr-light, $tumblr-light-2x, $twitter-dark, $twitter-dark-2x, $twitter-light, $twitter-light-2x, );
+$spritesheet: (440px, 426px, '../img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

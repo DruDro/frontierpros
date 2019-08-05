@@ -1,0 +1,11 @@
+﻿{
+	"Group": "ExternalAuth methods",
+	"FriendlyName": "Twitter authentication",
+	"SystemName": "ExternalAuth.Twitter",
+	"Version": "1.0",
+	"SupportedVersions": [ "4.10" ],
+	"Author": "Gentle Code LLC",
+	"DisplayOrder": 6,
+	"FileName": "Nop.Plugin.ExternalAuth.Twitter.dll",
+	"Description": "This plugin enables Twitter authentication (login using Twitter account)"
+}

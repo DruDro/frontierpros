@@ -1,0 +1,9 @@
+﻿@{
+    Layout = "";
+    Html.AddCssFileParts("~/Plugins/ExternalAuth.ActiveDirectory/Content/active-directory-styles.css");
+}
+<div class="ad-login-block">
+    <div class="buttons">
+        <a asp-controller="activedirectoryauthentication" asp-action="login" asp-route-returnurl="@Context.Request.Query["ReturnUrl"]" class="ad-btn"></a>
+    </div>
+</div>

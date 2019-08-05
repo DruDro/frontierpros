@@ -1,0 +1,5 @@
+﻿{
+  "DataProvider": "sqlserver",
+  "DataConnectionString": "Data Source=frontierpros-dev-sql.database.windows.net;Initial Catalog=frontierpros-dev-db;Integrated Security=False;Persist Security Info=False;User ID=frontieradmindev;Password=TierDev1120@;Connect Timeout=30",
+  "RawDataSettings": {}
+}

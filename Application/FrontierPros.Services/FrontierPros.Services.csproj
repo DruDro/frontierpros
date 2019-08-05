@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FrontierPros.Core\FrontierPros.Core.csproj" />
+    <ProjectReference Include="..\FrontierPros.Data\FrontierPros.Data.csproj" />
+    <ProjectReference Include="..\Libraries\Nop.Services\Nop.Services.csproj" />
+  </ItemGroup>
+
+</Project>

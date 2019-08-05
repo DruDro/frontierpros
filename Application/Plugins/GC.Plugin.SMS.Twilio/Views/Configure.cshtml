@@ -1,0 +1,88 @@
+﻿@{
+	Layout = "_ConfigurePlugin";
+}
+
+@model Nop.Plugin.Sms.Twilio.Models.SmsTwilioModel
+
+<form asp-controller="SmsTwilio" asp-action="Configure" method="post">
+	<div class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p>
+					TODO: add instructions to fill settings For Twilio
+				</p>
+				<div class="form-group">
+					<div class="col-md-3">
+						<nop-label asp-for="Enabled" />
+					</div>
+					<div class="col-md-9">
+						<nop-editor asp-for="Enabled" />
+						<span asp-validation-for="Enabled"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-3">
+						<nop-label asp-for="AccountSid" />
+					</div>
+					<div class="col-md-9">
+						<nop-editor asp-for="AccountSid" />
+						<span asp-validation-for="AccountSid"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-3">
+						<nop-label asp-for="AuthToken" />
+					</div>
+					<div class="col-md-9">
+						<nop-editor asp-for="AuthToken" />
+						<span asp-validation-for="AuthToken"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-3">
+						<nop-label asp-for="PhoneNumber" />
+					</div>
+					<div class="col-md-9">
+						<nop-editor asp-for="PhoneNumber" />
+						<span asp-validation-for="PhoneNumber"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-9 col-md-offset-3">
+						<input type="submit" name="save" class="btn btn-primary" value="@T("Admin.Common.Save")" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				@T("Plugins.Sms.Twilio.SendTest.Hint")
+			</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<div class="col-md-3">
+						<nop-label asp-for="TestPhoneNumber" />
+					</div>
+					<div class="col-md-9">
+						<nop-editor asp-for="TestPhoneNumber" />
+						<span asp-validation-for="TestPhoneNumber"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-3">
+						<nop-label asp-for="TestMessage" />
+					</div>
+					<div class="col-md-9">
+						<nop-editor asp-for="TestMessage" />
+						<span asp-validation-for="TestMessage"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-9 col-md-offset-3">
+						<input type="submit" name="test" class="btn btn-primary" value="@T("Plugins.Sms.Twilio.SendTest")" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

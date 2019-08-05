@@ -1,0 +1,11 @@
+﻿{
+	"Group": "ExternalAuth methods",
+	"FriendlyName": "ActiveDirectory B2C authentication",
+	"SystemName": "ExternalAuth.ActiveDirectoryB2C",
+	"Version": "1.01",
+	"SupportedVersions": [ "4.10" ],
+	"Author": "Gentle Code LLC",
+	"DisplayOrder": 7,
+	"FileName": "Nop.Plugin.ExternalAuth.ActiveDirectoryB2C.dll",
+	"Description": "This plugin enables ActiveDirectory B2C authentication (login using ActiveDirectory B2C)"
+}

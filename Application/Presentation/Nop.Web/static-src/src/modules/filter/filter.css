@@ -1,0 +1,9 @@
+#filterCategories {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+#filterCategories button, #filterCategories .btn {
+  margin: 20px;
+}
+/*# sourceMappingURL=filter.css.map */

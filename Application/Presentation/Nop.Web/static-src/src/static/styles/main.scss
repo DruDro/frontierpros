@@ -1,0 +1,24 @@
+//variables
+@import "variables.scss";
+//sprite
+@import "sprite.scss";
+//bower components
+//fotns
+@import "fonts.scss";
+//mixin
+@import "mixins&includes.scss";
+//typography
+@import "typography.scss";
+//plugins
+@import "plugins/**/*.scss";
+//layout
+@import "layout.scss";
+
+//form all
+@import "components/*.scss";
+
+
+//pages style
+@import "../../modules/**/*.scss"; // подключение стилей страницы (modules)
+
+@import "pages/*.scss";

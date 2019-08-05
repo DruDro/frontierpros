@@ -1,0 +1,278 @@
+
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    padding: 0 0 75px;
+	margin: 0 0 60px;
+	background: transparent;
+		overflow:hidden;
+	&:before{
+		display:none;
+	}
+    @include b(mobile) {
+        padding: 0 0 50px;
+        margin: 0 0 40px;
+    }
+    .slick-list {
+        margin: 0 -20px;
+		cursor: grab;
+    }
+
+    &__nav {
+        position: absolute;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        left: 0;
+        @include b(mobile) {
+            left: 0;
+            width: 100%;
+            height: 24px;
+        }
+        .slick-dots {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            width: calc(100% - 100px);
+            border-radius: 3px;
+            align-items: center;
+            justify-content: center;
+            @include b(mobile) {
+                width: calc(100% - 50px);
+            }
+            li {
+                padding: 0;
+                line-height: 0;
+                font-size: 0;
+                margin: 0 8px;
+                flex: 0 0 auto;
+                position: relative;
+                @include b(mobile) {
+                    margin: 0 4px;
+                }
+                &:before {
+                    display: none;
+                }
+
+                button {
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    font-size: 0;
+                    line-height: 0;
+                    padding: 0;
+                    background: rgba(#7094f7, 0.5);
+                    transition: all 0.15s ease-in-out;
+                    border-radius: 50%;
+
+                    @include b(mobile) {
+                        width: 7px;
+                        height: 7px;
+                    }
+                    &:before {
+                        display: none !important;
+                    }
+
+                    &:hover {
+                        background: #dce4fd;
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        background: #7094f7;
+                        transform: scale(1.4);
+                    }
+                }
+            }
+        }
+
+        .slick-arrow {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            line-height: 35px;
+            background: #7094f7;
+            text-align: center;
+            transition: all 0.15s ease-in-out;
+            @include b(mobile) {
+                height: 24px;
+                width: 24px;
+                line-height: 24px;
+            }
+            &:hover {
+                background: #fff;
+                .icon {
+                    color: $themeColor;
+                }
+            }
+            &.slick-disabled {
+                background: #dce4fd;
+                cursor: not-allowed;
+                .icon {
+                    color: #fff;
+                }
+            }
+
+            .icon {
+                font-size: 16px;
+                color: #fff;
+                transition: color 0.15s ease-in-out;
+
+                @include b(mobile) {
+                    right: 0;
+                    left: auto;
+                }
+            }
+
+            &.next {
+                right: 0;
+                left: auto;
+            }
+        }
+    }
+
+    .slick-slide {
+        width: 260px;
+        margin: 0 20px;
+		overflow: hidden;
+		display:block;
+		float:left;
+
+        .card {
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            width: 260px;
+            height: 260px;
+            transition: all 0.15s ease-in-out;
+
+            .bg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 20px;
+                }
+            }
+
+            .info {
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: absolute;
+                border-radius: 20px;
+                background: #7094f7;
+                color: #fff;
+                transition: all 0.15s ease-in-out;
+                text-align: center;
+                padding: 20px;
+            }
+
+            &:hover {
+                box-shadow: 0 15px 30px rgba(#0a0f43, 0.3);
+
+                .info {
+                    opacity: 1;
+                }
+            }
+
+            .rating {
+                color: #fdba06;
+                display: inline-flex;
+                align-items: center;
+                font-weight: bold;
+
+                .stars {
+                    margin-left: 10px;
+                }
+            }
+
+            .description {
+                font-size: 14px;
+                font-weight: 300;
+                padding: 20px 0;
+            }
+
+            .user {
+                display: inline-flex;
+                align-items: center;
+
+                .ava {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: relative;
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 20px;
+
+                    img {
+                        min-width: 100%;
+                        min-height: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .name {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            .book {
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                padding: 0 40px;
+                left: 0;
+
+                a {
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .title {
+            color: #171a77;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px 0 10px;
+            width: 260px;
+            margin: 0 auto;
+        }
+
+        .details {
+            font-size: 18px;
+            color: #2c2c2c;
+            font-weight: 300;
+            width: 260px;
+            margin: 0 auto;
+        }
+    }
+}

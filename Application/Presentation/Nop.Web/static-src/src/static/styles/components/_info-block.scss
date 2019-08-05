@@ -1,0 +1,50 @@
+.info-block {
+    background:#fff;
+    padding: 35px 90px;
+    @include b(mobile){
+        padding: 25px 15px;
+    }
+    &__heading {
+        text-align:center;
+        font-size: 24px;
+        padding:0 0 24px;
+        margin: 0 0 20px;
+        position: relative; 
+        @include b(desktop){
+            font-size:22px;   
+            padding:0 0 15px;
+            margin: 0 0 15px; 
+        }
+        &.l{
+            font-size:50px;
+            @include b(desktop){
+                font-size:35px;   
+            }
+        }
+        &:before {
+            content:"";
+            position:absolute;
+            width:90px;
+            display:block;
+            height:1px;
+            background: #000;
+            left:50%;
+            bottom:1px;
+            transform:translateX(-50%);
+        }
+        &.no-line{
+            &:before{
+                display:none;
+            }
+        }
+    }
+    &__content{        
+        font-size:24px;    
+        @include b(desktop){
+            font-size:18px;    
+        }
+    }
+    &__action{
+        margin: 30px 0 0;
+    }
+}

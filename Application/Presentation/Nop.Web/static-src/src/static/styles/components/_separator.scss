@@ -1,0 +1,39 @@
+.separator {
+	display:block;
+	position: relative;
+	width:100%;
+	margin:35px auto !important;
+	&:after {
+		display:block;
+		content:"";
+		position:relative;
+		margin:0 auto;
+	}
+	&--vertical {
+		&:after {
+			width: 4px;
+			height:78px;
+		}
+	}
+	&--horizontal {
+		&:after {
+			height: 5px;
+			width:82px;
+		}
+	}
+	&--black {
+		&:after {
+			background: #1e1513;
+		}
+	}
+	&--white {
+		&:after {
+			background: #fff;
+		}
+	}
+	&--green {
+		&:after {
+			background: green;
+		}
+	}
+}

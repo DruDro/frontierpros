@@ -1,0 +1,72 @@
+
+.btn.custom {
+	position: relative;
+    margin: 0;
+    background: #dae2fc;
+    color: #0e36a4;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 30px;
+    height: 40px;
+	line-height: 40px;
+	text-align:center;
+    font-size: 18px;
+    padding: 0 20px;
+    transition: all 0.15s ease-in-out;
+    z-index: 1;
+    outline: 0;
+    &.primary {
+        background: #7094f7;
+        color: #fff;
+    }
+    &:hover {
+        background: #fff !important;
+        color: #7094f7 !important;
+        box-shadow: 0 15px 30px rgba(#0a0f43, 0.3)!important;
+        z-index: 20;
+    }
+    &.transparent {
+        color: #7094f7!important;
+		background: transparent!important;
+		border:1px solid #7094f7!important;
+		box-shadow:none!important;
+		&:hover{
+			background: #7094f7!important;
+			color: #fff!important;
+		}
+    }
+    &.router-link-active, &.active {
+        color: #fff;
+        background: #7094f7;
+        box-shadow: 0 15px 30px rgba(#0a0f43, 0.3);
+        z-index: 7;
+    }
+    &:active {
+        box-shadow: none;
+    }
+    &.large {
+        height: 55px;
+        line-height: 55px;
+    }
+	&.full-width{
+		width:100%;
+		display:block;
+	}
+	&.no-border {
+		border:0!important;
+	}
+	&.raised{
+		
+	box-shadow: 0 15px 30px rgba(#0a0f43, 0.3)!important;
+	}
+	&.no-shadow {
+		box-shadow:none!important;
+	}
+}
+
+
+.back-btn {
+	.btn,.v-btn, button{
+		margin:0
+	}
+}

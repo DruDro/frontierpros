@@ -1,0 +1,411 @@
+.search-section {
+	padding: 60px 0 40px;
+	margin-bottom: 70px;
+
+	h1 {
+		width: 1100px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.input-box.icon-right {
+		.icon {
+			width: 20px;
+			height: 28px;
+			fill: darken(#dce4fd, 10%);
+
+			&:hover,
+			&:focus,
+			&:active {
+
+				fill: darken(#dce4fd, 20%);
+			}
+		}
+	}
+
+	.how-link {
+		display: inline-block;
+		margin: 10px 0 0;
+		font-weight: bold;
+	}
+
+	.sign-up {
+		text-align: center;
+		max-width: 100%;
+		margin: 20px 0 0;
+
+		.btn {
+			display: inline-block;
+		}
+
+		@include b(mobile) {
+
+			button,
+			.btn {
+				display: block;
+			}
+		}
+	}
+}
+
+.search-results {
+	display: none;
+
+	.desc {
+		font-weight: 300;
+		color: #2c2c2c;
+		font-size: 14px;
+		padding: 0 0 10px;
+	}
+
+	.hint {
+		color: $themeColor;
+		padding: 0 0 20px;
+	}
+
+	.other-request {
+		padding: 0 0 45px;
+
+		.card {
+			position: relative;
+			padding: 30px 150px;
+			background: url(../img/home/card-bg.png) right -200px no-repeat, #fff;
+			box-shadow: 0 15px 30px rgba(#0a0f43, .1);
+
+			@include b(960) {
+				padding: 30px
+			}
+
+			display: flex;
+			flex-flow:row wrap;
+			align-items: flex-end;
+			justify-content: space-between;
+
+			@include b(1200) {
+				display: block;
+			}
+		}
+
+		.desc {
+			padding: 0;
+			flex: 0 0 100%;
+		}
+
+		.hint {
+			flex: 0 0 100%;
+		}
+
+		.request {
+			flex: 0 0 auto;
+
+			&__title {
+				font-weight: bold;
+			}
+
+			p {
+				font-weight: 300;
+				padding: 15px 0 0;
+
+				b {
+					font-weight: 700;
+				}
+			}
+
+			.details {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.start-project {
+		flex: 0 0 260px;
+		width: 260px;
+		text-align: center;
+		margin: 40px 0 0;
+
+		@include b(1200) {
+			margin: 40px auto 0;
+		}
+
+		@include b(mobile) {
+			width: 100%;
+		}
+
+		.price {
+			font-size: 76px;
+			font-weight: 700;
+			color: #143ca9;
+			padding: 0 0 40px;
+
+			@include b(1200) {
+				font-size: 36px;
+				padding: 0 0 20px;
+			}
+		}
+
+		.average-price {
+			display: inline-block;
+			margin: 10px 0;
+			color: #143ca9;
+		}
+
+		.start-action {
+			text-align: center;
+
+			@include b(mobile) {
+
+				button,
+				.btn {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.search-form {
+	width: 870px;
+	max-width: 100%;
+	margin: 0 auto;
+
+	.labels {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+
+		label {
+			position: relative;
+		}
+	}
+
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 45px;
+		height: 20px;
+		margin-bottom: .5rem;
+	}
+}
+
+.slider.technicians {
+	overflow: hidden;
+	margin-left: -45px;
+	margin-right: -45px;
+	padding: 50px 0 75px;
+
+	.slick-list {
+		overflow: visible;
+	}
+
+	.slider__nav {
+		width: calc(100% - 90px);
+		left: 45px;
+	}
+
+	.slide {
+		margin: 0 40px;
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+		overflow: visible;
+
+		.card {
+			position: relative;
+			background: transparent;
+			transition: padding .15s ease-in-out;
+			padding: 30px;
+			overflow: visible;
+			box-shadow: none;
+
+			&:before {
+				content: "";
+				display: block;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				border-radius: 20px;
+				box-shadow: 0px 15px 30px 0px rgba(10, 15, 67, 0.11);
+
+				transition: all .15s ease-in-out;
+				background: #fff;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				position: absolute;
+			}
+
+			.technician {
+				&__best-choice {
+					background: $secondaryThemeColor;
+					width: calc(100% + 60px);
+					left: -30px;
+					top: -30px;
+					border-radius: 20px 20px 0 0;
+					text-align: center;
+					color: white;
+					font-size: 18px;
+					padding: 5px;
+					font-weight: bold;
+					position: relative;
+					transition: all .15s ease-in-out;
+				}
+
+				&__header {
+					display: flex;
+					align-items: flex-end;
+					padding: 0 0 30px;
+
+				}
+
+				&__ava {
+					flex: 0 0 80px;
+					width: 80px;
+					height: 80px;
+					position: relative;
+					border-radius: 50%;
+					overflow: hidden;
+					margin-right: 40px;
+
+
+					img {
+						display: block;
+						min-width: 100%;
+						min-height: 100%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				&__details {
+					flex: 0 1 100%;
+
+					.projects {
+						font-size: 24px;
+						font-weight: 300;
+
+						b {
+							font-weight: 700;
+						}
+					}
+
+					.person {
+						padding: 10px 0;
+						display: flex;
+						justify-content: space-between
+					}
+
+					.name {
+						font-weight: bold;
+						font-size: 18px;
+						flex: 0 0 auto;
+					}
+
+					.rating {
+						flex: 0 0 auto;
+						color: #fdba06;
+						font-weight: 700;
+						font-size: 18px;
+
+						.stars {
+							display: inline-block;
+							margin: 0 20px 0 10px;
+						}
+
+						.reviews {
+							display: inline-block;
+							color: $mainFontColor;
+							font-weight: 300;
+						}
+					}
+
+					.highlights {}
+
+					.job {
+						color: #171a77;
+						font-weight: 400;
+						font-size: 18px;
+						display: block;
+						margin: 0 0 0 0;
+					}
+				}
+
+				&__review {
+					h3 {
+						font-size: 18px;
+						font-weight: bold;
+						color: #1c1c1c;
+					}
+
+					.review__text {
+						padding: 10px 0 0;
+						line-height: normal;
+						font-size: 14px;
+						font-weight: 300;
+						color: #8d8d8d;
+					}
+				}
+
+				&__book {
+					text-align: center;
+					padding: 20px 0 0;
+
+					button {
+						display: inline-block;
+					}
+
+					@include b(mobile) {
+
+						button,
+						.btn {
+							display: block;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slick-current {
+		.card {
+			.technician {
+
+				&__best-choice {
+					width: calc(110% + 60px);
+					left: calc(-5% - 30px);
+					top: -60px;
+
+					@include b(1280) {
+						width: calc(100% + 60px);
+						left: -30px;
+						top: -30px;
+					}
+
+				}
+			}
+
+			&:before {
+				transform: translate(-50%, -50%) scale(1.1);
+
+				@include b(1280) {
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 767px)  {
+	.switch-chek {
+		margin-top: 25px;
+	}
+}
+
+@media only screen and (max-width: 700px)  {
+	.search-section {
+		margin-bottom: 20px;
+	}
+}

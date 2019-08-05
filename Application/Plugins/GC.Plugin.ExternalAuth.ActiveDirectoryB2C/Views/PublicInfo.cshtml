@@ -1,0 +1,9 @@
+﻿@{
+    Layout = "";
+    Html.AddCssFileParts("~/Plugins/ExternalAuth.ActiveDirectoryB2C/Content/active-directory-b2c-styles.css");
+}
+<div class="ad-b2c-login-block">
+  <div class="buttons">
+    <a asp-area="AzureADB2C" asp-controller="Account" asp-action="SignIn" asp-route-returnurl="@Context.Request.Query["ReturnUrl"]" class="ad-b2c-btn"></a>
+  </div>
+</div>
